@@ -4,7 +4,6 @@ class Reference
 /*******************************Attributs*******************************/
 private $_idReference;
 private $_nomReference;
-
 /******************************Accesseurs*******************************/
 public function getIdReference()
 {
@@ -22,7 +21,6 @@ public function setNomReference($_nomReference)
 {
  return $this->_nomReference = $_nomReference;
 }
-
 /*******************************Construct*******************************/
 public function __construct(array $options = [])
     {
