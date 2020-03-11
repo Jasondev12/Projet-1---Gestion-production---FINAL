@@ -8,11 +8,8 @@ private $_ordreFabrication;
 private $_dateHeureDebutProd;
 private $_dateHeureFinProd;
 private $_idUtilisateur;
-<<<<<<< HEAD
 private $_idReference;
-=======
 
->>>>>>> 86f7ef324470baa8a9cfb2f459cec641e18d2d39
 /******************************Accesseurs*******************************/
 public function getIdProduction()
 {
@@ -62,7 +59,7 @@ public function setIdUtilisateur($_idUtilisateur)
 {
  return $this->_idUtilisateur = $_idUtilisateur;
 }
-<<<<<<< HEAD
+
 public function getIdReference()
 {
  return $this->_idReference;
@@ -71,9 +68,7 @@ public function setIdReference($_idReference)
 {
  return $this->_idReference = $_idReference;
 }
-=======
 
->>>>>>> 86f7ef324470baa8a9cfb2f459cec641e18d2d39
 /*******************************Construct*******************************/
 public function __construct(array $options = [])
     {
@@ -82,11 +77,7 @@ public function __construct(array $options = [])
             $this->hydrate($options);
         }
     }
-<<<<<<< HEAD
-=======
-
->>>>>>> 86f7ef324470baa8a9cfb2f459cec641e18d2d39
-    public function hydrate($data)
+public function hydrate($data)
     {
         foreach ($data as $key => $value) {
             $methode = "set" . ucfirst($key);
@@ -96,17 +87,9 @@ public function __construct(array $options = [])
             }
         }
     }
-<<<<<<< HEAD
-=======
-
->>>>>>> 86f7ef324470baa8a9cfb2f459cec641e18d2d39
 /****************************Autres méthodes****************************/
 public function toString() 
 { 
  return $this->getIdProduction . $this->getQuantite . $this->getOrdreFabrication . $this->getDateHeureDebutProd . $this->getDateHeureFinProd . $this->getIdUtilisateur ;
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> 86f7ef324470baa8a9cfb2f459cec641e18d2d39
 }

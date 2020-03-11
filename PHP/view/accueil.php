@@ -17,7 +17,7 @@ $affichage = '
 $listeProductions = ProductionManager::getShortList();
 foreach ($listeProductions as $listeProd) {
     $affichage .= '<tbody>
-      <tr>
+      <tr> 
         <td  class="bordertd" data-label="idProduction">' . $listeProd->getIdProduction() . '</td>
         <td class="bordertd" data-label="dateTime">' . date('d/m/Y', strtotime($listeProd->getDateHeureDebutProd())) . '</td>
         <td class="bordertd" data-label="nomProduit">' . ReferenceManager::findById($listeProd->getIdReference())->getNomReference() . '</td>
