@@ -1,5 +1,4 @@
 <?php
-
 $prenomUtilisateur = (isset($_SESSION['prenomUtilisateur'])) ? $_SESSION['prenomUtilisateur'] : '';
 echo "<h1 class='titreAccueil'>Bienvenue " . $prenomUtilisateur . "</h1>";
 $affichage = '
